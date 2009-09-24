@@ -1,1 +1,7 @@
 This directory contains processing projects for Data Mining.
+
+iris: 	Plots all combinations of iris attributes against each other.
+	Individual data points are color coded for different iris types.
+
+iris_summary: 	Plots mean and median of different iris attributes.
+		Shows these statistics comparing each iris type.
