@@ -107,6 +107,8 @@ void draw( ) {
   
   // Draw the data for each column combination
   drawDataPoints(currentColumn1, currentColumn2);
+  
+  drawLegend();
 }
 
 // Draw the data as a series of points.
@@ -218,6 +220,42 @@ void drawTitleTabs( ) {
     
     runningX = tabRight[col];
   }
+}
+
+void drawLegend(){
+  stroke(0);
+  strokeWeight(2);
+  rectMode(CORNER);
+  fill(255);
+  rect(plotX1+10, plotY1+10, 100, 70);
+  
+  textAlign(LEFT, CENTER);
+  strokeWeight(5);
+  fill(0);
+  textSize(12);
+  textLeading(5);
+  
+  stroke(#990000);
+  point(plotX1+20, plotY1+20);
+  text("Iris-virginica", plotX1+30, plotY1+20);
+  
+  stroke(#006600);
+  point(plotX1+20, plotY1+40);
+  text("Iris-versicolor", plotX1+30, plotY1+40);
+  
+  stroke(#000066);
+  point(plotX1+20, plotY1+60);
+  text("Iris-setosa", plotX1+30, plotY1+60);
+  /*
+  noStroke();
+  fill(#5679C1);
+  rect(520, 35, 25, 25);
+  text("Mean", 550, 40);
+  
+  fill(#5600C1);
+  rect(520, 75, 25, 25);
+  text("Median", 550, 85);
+  */
 }
 
 void mousePressed( ) {
