@@ -1,0 +1,112 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     train-a-weka.filters.unsupervised.attribute.NumericToNominal-R7-9,11-49,53-78-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    99999
+Attributes:   78
+              Interval
+              Length of Stay
+Ignored:
+              PatientID
+              Record Count
+              Patient-Sex
+              Age
+              Patient-Race
+              Patient-Ethnicity
+              Patient-Disposition
+              Admit-Type
+              Admit-Source
+              Hospital-ID
+              Region-ID
+              Principal-Dx-Code
+              Admit-Dx-Code
+              Other-Dx-Code-1
+              Other-Dx-Code-2
+              Other-Dx-Code-3
+              Other-Dx-Code-4
+              Other-Dx-Code-5
+              Other-Dx-Code-6
+              Other-Dx-Code-7
+              Other-Dx-Code-8
+              Other-Dx-Code-9
+              Other-Dx-Code-10
+              Other-Dx-Code-11
+              Other-Dx-Code-12
+              Other-Dx-Code-13
+              Other-Dx-Code-14
+              Principal-PR-Code
+              Other-PR-Code-1
+              Other-PR-Code-2
+              Other-PR-Code-3
+              Other-PR-Code-4
+              Other-PR-Code-5
+              Other-PR-Code-6
+              Other-PR-Code-7
+              Other-PR-Code-8
+              Other-PR-Code-9
+              Other-PR-Code-10
+              Other-PR-Code-11
+              Other-PR-Code-12
+              Other-PR-Code-13
+              Other-PR-Code-14
+              Cause-E-Code
+              Place-E-Code
+              Reimb DRG
+              Reimb MDC
+              AccomCharges
+              AncilCharges
+              TotalCharges
+              Serv-Class
+              Residence-Ind
+              Emergency-Dept-Ind
+              CMC1
+              CMC2
+              CMC3
+              CMC4
+              CMC5
+              CMC6
+              CMC7
+              CMC8
+              CMC9
+              CMC10
+              PL1
+              PL2
+              PL3
+              PL4
+              PL5
+              Pot Amb
+              Complication-Minor
+              Complication-Sever
+              Trauma-Minor
+              Trauma-Severe
+              Trauma-Severity
+              Nosocomial Inf
+              Severity
+              Cost Weight
+Test mode:    evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 11
+Within cluster sum of squared errors: 172.39789924624864
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                              Cluster#
+Attribute         Full Data          0          1          2
+                    (99999)    (13235)     (4734)    (82030)
+============================================================
+Interval           135.3515   290.2882   617.4641    82.5304
+Length of Stay       7.8484     6.8266     6.6278     8.0837
+
+
+Clustered Instances
+
+0      13235 ( 13%)
+1       4734 (  5%)
+2      82030 ( 82%)
+
