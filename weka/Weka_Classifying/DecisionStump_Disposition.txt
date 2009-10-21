@@ -1,0 +1,166 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     train-a-weka.filters.unsupervised.attribute.NumericToNominal-R7-9,11-49,53-78-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    99999
+Attributes:   78
+              PatientID
+              Record Count
+              Interval
+              Patient-Sex
+              Age
+              Patient-Race
+              Patient-Ethnicity
+              Patient-Disposition
+              Length of Stay
+              Admit-Type
+              Admit-Source
+              Hospital-ID
+              Region-ID
+              Principal-Dx-Code
+              Admit-Dx-Code
+              Other-Dx-Code-1
+              Other-Dx-Code-2
+              Other-Dx-Code-3
+              Other-Dx-Code-4
+              Other-Dx-Code-5
+              Other-Dx-Code-6
+              Other-Dx-Code-7
+              Other-Dx-Code-8
+              Other-Dx-Code-9
+              Other-Dx-Code-10
+              Other-Dx-Code-11
+              Other-Dx-Code-12
+              Other-Dx-Code-13
+              Other-Dx-Code-14
+              Principal-PR-Code
+              Other-PR-Code-1
+              Other-PR-Code-2
+              Other-PR-Code-3
+              Other-PR-Code-4
+              Other-PR-Code-5
+              Other-PR-Code-6
+              Other-PR-Code-7
+              Other-PR-Code-8
+              Other-PR-Code-9
+              Other-PR-Code-10
+              Other-PR-Code-11
+              Other-PR-Code-12
+              Other-PR-Code-13
+              Other-PR-Code-14
+              Cause-E-Code
+              Place-E-Code
+              Reimb DRG
+              Reimb MDC
+              AccomCharges
+              AncilCharges
+              TotalCharges
+              Serv-Class
+              Residence-Ind
+              Emergency-Dept-Ind
+              CMC1
+              CMC2
+              CMC3
+              CMC4
+              CMC5
+              CMC6
+              CMC7
+              CMC8
+              CMC9
+              CMC10
+              PL1
+              PL2
+              PL3
+              PL4
+              PL5
+              Pot Amb
+              Complication-Minor
+              Complication-Sever
+              Trauma-Minor
+              Trauma-Severe
+              Trauma-Severity
+              Nosocomial Inf
+              Severity
+              Cost Weight
+Test mode:    4-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+Length of Stay <= 4.5 : 1
+Length of Stay > 4.5 : 1
+Length of Stay is missing : 1
+
+Class distributions
+
+Length of Stay <= 4.5
+1	2	3	4	5	6	7	8	20	43	50	51	61	62	63	65	66	
+0.5945171568065647	0.056937217777981525	0.10429321291860545	0.0058679258257501084	0.009306163614275564	0.17122424186856763	0.02601599926650927	0.0011690008480986546	0.015403305292594037	3.4382377885254544E-4	0.0013982167006670182	8.25177069246109E-4	0.0014440598711806909	0.009672908978384945	4.355101198798909E-4	0.001077314507071309	6.876475577050909E-5	
+Length of Stay > 4.5
+1	2	3	4	5	6	7	8	20	43	50	51	61	62	63	65	66	
+0.32044277300787627	0.03049386220109274	0.2911551834243951	0.005658837720854325	0.016355637550557012	0.2528028099056269	0.006492584971262328	0.00299794224082878	0.027158873199460726	1.9513233520187327E-4	0.0027850706024267367	0.0035123820336337187	0.002625416873625204	0.03523025615553821	0.0012949691336124316	7.627900376073228E-4	3.5478606400340594E-5	
+Length of Stay is missing
+1	2	3	4	5	6	7	8	20	43	50	51	61	62	63	65	66	
+0.44001440014400145	0.042030420304203044	0.20963209632096322	0.005750057500575006	0.013280132801328013	0.21721217212172123	0.015010150101501016	0.0022000220002200022	0.022030220302203023	2.6000260002600025E-4	0.002180021800218002	0.0023400234002340023	0.002110021100211002	0.024080240802408025	9.20009200092001E-4	9.000090000900009E-4	5.000050000500005E-5	
+
+
+Time taken to build model: 4.64 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       44188               44.1884 %
+Incorrectly Classified Instances     55811               55.8116 %
+Kappa statistic                          0.0495
+Mean absolute error                      0.0803
+Root mean squared error                  0.2004
+Relative absolute error                 95.8826 %
+Root relative squared error             97.9377 %
+Total Number of Instances            99999     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.921     0.851      0.459     0.921     0.613      0.641    1
+                 0         0          0         0         0          0.579    2
+                 0.175     0.103      0.311     0.175     0.224      0.644    3
+                 0         0          0         0         0          0.487    4
+                 0         0          0         0         0          0.568    5
+                 0         0          0         0         0          0.558    6
+                 0         0          0         0         0          0.66     7
+                 0         0          0         0         0          0.594    8
+                 0         0          0         0         0          0.579    20
+                 0         0          0         0         0          0.513    43
+                 0         0          0         0         0          0.586    50
+                 0         0          0         0         0          0.631    51
+                 0         0          0         0         0          0.565    61
+                 0         0          0         0         0          0.636    62
+                 0         0          0         0         0          0.601    63
+                 0         0          0         0         0          0.501    65
+                 0         0          0         0         0          0.466    66
+Weighted Avg.    0.442     0.396      0.267     0.442     0.317      0.617
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h     i     j     k     l     m     n     o     p     q   <-- classified as
+ 40518     0  3483     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     a = 1
+  3829     0   374     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     b = 2
+ 17293     0  3670     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     c = 3
+   512     0    63     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     d = 4
+  1124     0   204     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     e = 5
+ 18761     0  2960     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     f = 6
+  1426     0    75     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     g = 7
+   185     0    35     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     h = 8
+  1838     0   365     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     i = 20
+    25     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     j = 43
+   176     0    42     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     k = 50
+   194     0    40     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     l = 51
+   183     0    28     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     m = 61
+  1968     0   440     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     n = 62
+    78     0    14     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     o = 63
+    78     0    12     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     p = 65
+     5     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     q = 66
+

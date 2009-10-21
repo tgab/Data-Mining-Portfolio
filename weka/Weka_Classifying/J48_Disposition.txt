@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     train-f-weka.filters.unsupervised.attribute.NumericToNominal-R7-9,11-49,53-78-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R1,9,16-52,55-74,76,78
+Instances:    3059
+Attributes:   17
+              Record Count
+              Interval
+              Patient-Sex
+              Age
+              Patient-Race
+              Patient-Ethnicity
+              Patient-Disposition
+              Admit-Type
+              Admit-Source
+              Hospital-ID
+              Region-ID
+              Principal-Dx-Code
+              Admit-Dx-Code
+              Residence-Ind
+              Emergency-Dept-Ind
+              Trauma-Severity
+              Severity
+Test mode:    4-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: 1 (3059.0/1759.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.3 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1300               42.4975 %
+Incorrectly Classified Instances      1759               57.5025 %
+Kappa statistic                          0     
+Mean absolute error                      0.0965
+Root mean squared error                  0.2197
+Relative absolute error                 99.8124 %
+Root relative squared error             99.9994 %
+Total Number of Instances             3059     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.425     1         0.596      0.5      1
+                 0         0          0         0         0          0.497    2
+                 0         0          0         0         0          0.499    3
+                 0         0          0         0         0          0.5      4
+                 0         0          0         0         0          0.5      5
+                 0         0          0         0         0          0.499    6
+                 0         0          0         0         0          0.488    7
+                 0         0          0         0         0          0.375    8
+                 0         0          0         0         0          0.5      20
+                 0         0          0         0         0          0.5      50
+                 0         0          0         0         0          0.475    51
+                 0         0          0         0         0          0.45     61
+                 0         0          0         0         0          0.496    62
+                 0         0          0         0         0          0.5      63
+                 0         0          0         0         0          0.375    65
+Weighted Avg.    0.425     0.425      0.181     0.425     0.253      0.499
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m    n    o   <-- classified as
+ 1300    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    a = 1
+  119    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    b = 2
+  663    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    c = 3
+   32    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    d = 4
+   52    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    e = 5
+  649    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    f = 6
+   42    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    g = 7
+    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    h = 8
+   64    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    i = 20
+    8    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    j = 50
+   15    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    k = 51
+   10    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    l = 61
+   95    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    m = 62
+    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    n = 63
+    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    o = 65
+

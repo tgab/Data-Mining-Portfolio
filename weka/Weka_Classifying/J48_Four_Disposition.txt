@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     train-f-weka.filters.unsupervised.attribute.NumericToNominal-R7-9,11-49,53-78-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R1,9,16-52,55-74,76,78-weka.filters.unsupervised.attribute.Remove-R1,3,5-6,9-17
+Instances:    3059
+Attributes:   4
+              Interval
+              Age
+              Patient-Disposition
+              Admit-Type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Interval <= 0.41
+|   Patient-Disposition = 1: 1 (67.86/34.95)
+|   Patient-Disposition = 2: 1 (19.21/9.33)
+|   Patient-Disposition = 3
+|   |   Interval <= 0.04: 2 (11.48/5.19)
+|   |   Interval > 0.04
+|   |   |   Age <= 79: 3 (17.4/8.16)
+|   |   |   Age > 79: 1 (9.88/2.8)
+|   Patient-Disposition = 4: 2 (1.33/0.27)
+|   Patient-Disposition = 5: 2 (3.14/1.07)
+|   Patient-Disposition = 6
+|   |   Interval <= 0.08
+|   |   |   Interval <= 0.04: 2 (13.62/7.38)
+|   |   |   Interval > 0.04: 3 (7.43/2.31)
+|   |   Interval > 0.08
+|   |   |   Interval <= 0.16: 1 (8.67/3.29)
+|   |   |   Interval > 0.16
+|   |   |   |   Interval <= 0.29: 2 (17.34/7.03)
+|   |   |   |   Interval > 0.29: 1 (9.91/4.34)
+|   Patient-Disposition = 7: 1 (0.73/0.07)
+|   Patient-Disposition = 8: 1 (0.0)
+|   Patient-Disposition = 20: 1 (0.13/0.07)
+|   Patient-Disposition = 50: 1 (0.07)
+|   Patient-Disposition = 51: 1 (0.07)
+|   Patient-Disposition = 61: 1 (0.07)
+|   Patient-Disposition = 62: 1 (13.87/7.53)
+|   Patient-Disposition = 63: 1 (1.13)
+|   Patient-Disposition = 65: 2 (1.07/0.07)
+Interval > 0.41: 1 (2854.61/510.77)
+
+Number of Leaves  : 	22
+
+Size of the tree : 	30
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2424               79.2416 %
+Incorrectly Classified Instances       635               20.7584 %
+Kappa statistic                          0.0217
+Mean absolute error                      0.1369
+Root mean squared error                  0.2621
+Relative absolute error                 98.205  %
+Root relative squared error             99.3914 %
+Total Number of Instances             3059     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.995     0.971      0.798     0.995     0.886      0.55     1
+                 0.007     0.005      0.133     0.007     0.013      0.564    2
+                 0.009     0.004      0.214     0.009     0.017      0.524    3
+                 0         0          0         0         0          0.058    4
+                 0         0          0         0         0          0.059    9
+Weighted Avg.    0.792     0.773      0.671     0.792     0.707      0.548
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 2419    7    4    0    0 |    a = 1
+  273    2    7    0    0 |    b = 2
+  336    6    3    0    0 |    c = 3
+    1    0    0    0    0 |    d = 4
+    1    0    0    0    0 |    e = 9
+
