@@ -25,5 +25,7 @@ Age
 Patient-Disposition
 Admit-Type
 
-The results are in J48_Four_Disposition.txt.  The percentage of incorrectly classsified instances was only 20.76% this time.  Although this is only the result of one experiment it seems to indicate that the number of attributes was a major factor that was getting in the way of the analysis, and spending time figuring out how to accurately reduce the number of dimensions into a more concise form could be very useful.
+The results are in J48_Four_Disposition.txt.  The percentage of incorrectly classified instances was about 56.5% this time.  Cutting out Admit-Type brought this number down to 55.2% (see J48_Three_Disposition.txt).  This suggested that perhaps the number of attributes was making it slightly harder to classify, but more likely these were just not good attributes to classify on.
+
+Predicting Admit-Type, using Interval and Age proved to be much more valuable, resulting in only 20.56% incorrectly classified (see J48_Three_AdmitType.txt).
 

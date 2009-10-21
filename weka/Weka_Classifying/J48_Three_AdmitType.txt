@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     train-f-weka.filters.unsupervised.attribute.NumericToNominal-R7-9,11-49,53-78-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R1,9,16-52,55-74,76,78-weka.filters.unsupervised.attribute.Remove-R1,3,5-6,9-17-weka.filters.unsupervised.attribute.Remove-R3
+Instances:    3059
+Attributes:   3
+              Interval
+              Age
+              Admit-Type
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: 1 (3059.0/629.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2430               79.4377 %
+Incorrectly Classified Instances       629               20.5623 %
+Kappa statistic                          0     
+Mean absolute error                      0.1391
+Root mean squared error                  0.2637
+Relative absolute error                 99.7648 %
+Root relative squared error             99.9998 %
+Total Number of Instances             3059     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.794     1         0.885      0.499    1
+                 0         0          0         0         0          0.497    2
+                 0         0          0         0         0          0.496    3
+                 0         0          0         0         0          0.05     4
+                 0         0          0         0         0          0.05     9
+Weighted Avg.    0.794     0.794      0.631     0.794     0.703      0.498
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 2430    0    0    0    0 |    a = 1
+  282    0    0    0    0 |    b = 2
+  345    0    0    0    0 |    c = 3
+    1    0    0    0    0 |    d = 4
+    1    0    0    0    0 |    e = 9
+
