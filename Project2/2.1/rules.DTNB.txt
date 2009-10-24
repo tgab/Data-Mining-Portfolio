@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DTNB -X 1
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 14
+Number of Rules : 12
+Non matches covered by Majority class.
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,4,5
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           8               57.1429 %
+Incorrectly Classified Instances         6               42.8571 %
+Kappa statistic                         -0.1351
+Mean absolute error                      0.5454
+Root mean squared error                  0.5607
+Relative absolute error                114.5337 %
+Root relative squared error            113.6458 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     1          0.615     0.889     0.727      0.078    yes
+                 0         0.111      0         0         0          0.078    no
+Weighted Avg.    0.571     0.683      0.396     0.571     0.468      0.078
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 8 1 | a = yes
+ 5 0 | b = no
+

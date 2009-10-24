@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+outlook:
+	sunny	-> no
+	overcast	-> yes
+	rainy	-> yes
+(10/14 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           6               42.8571 %
+Incorrectly Classified Instances         8               57.1429 %
+Kappa statistic                         -0.1429
+Mean absolute error                      0.5714
+Root mean squared error                  0.7559
+Relative absolute error                120      %
+Root relative squared error            153.2194 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.444     0.6        0.571     0.444     0.5        0.422    yes
+                 0.4       0.556      0.286     0.4       0.333      0.422    no
+Weighted Avg.    0.429     0.584      0.469     0.429     0.44       0.422
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 4 5 | a = yes
+ 3 2 | b = no
+

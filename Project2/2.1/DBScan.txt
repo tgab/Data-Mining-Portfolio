@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.DBScan -E 0.9 -M 6 -I weka.clusterers.forOPTICSAndDBScan.Databases.SequentialDatabase -D weka.clusterers.forOPTICSAndDBScan.DataObjects.EuclidianDataObject
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    evaluate on training data
+
+=== Model and evaluation on training set ===
+
+DBScan clustering results
+========================================================================================
+
+Clustered DataObjects: 14
+Number of attributes: 5
+Epsilon: 0.9; minPoints: 6
+Index: weka.clusterers.forOPTICSAndDBScan.Databases.SequentialDatabase
+Distance-type: weka.clusterers.forOPTICSAndDBScan.DataObjects.EuclidianDataObject
+Number of generated clusters: 0
+Elapsed time: .01
+
+( 0.) sunny,hot,high,FALSE,no                                                -->  NOISE
+( 1.) sunny,hot,high,TRUE,no                                                 -->  NOISE
+( 2.) overcast,hot,high,FALSE,yes                                            -->  NOISE
+( 3.) rainy,mild,high,FALSE,yes                                              -->  NOISE
+( 4.) rainy,cool,normal,FALSE,yes                                            -->  NOISE
+( 5.) rainy,cool,normal,TRUE,no                                              -->  NOISE
+( 6.) overcast,cool,normal,TRUE,yes                                          -->  NOISE
+( 7.) sunny,mild,high,FALSE,no                                               -->  NOISE
+( 8.) sunny,cool,normal,FALSE,yes                                            -->  NOISE
+( 9.) rainy,mild,normal,FALSE,yes                                            -->  NOISE
+(10.) sunny,mild,normal,TRUE,yes                                             -->  NOISE
+(11.) overcast,mild,high,TRUE,yes                                            -->  NOISE
+(12.) overcast,hot,normal,FALSE,yes                                          -->  NOISE
+(13.) rainy,mild,high,TRUE,no                                                -->  NOISE
+
+Clustered Instances
+
+
+Unclustered instances : 14

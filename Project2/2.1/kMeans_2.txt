@@ -1,0 +1,40 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 26.0
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                           Cluster#
+Attribute      Full Data          0          1
+                    (14)       (10)        (4)
+==============================================
+outlook            sunny      sunny   overcast
+temperature         mild       mild       cool
+humidity            high       high     normal
+windy              FALSE      FALSE       TRUE
+play                 yes        yes        yes
+
+
+Clustered Instances
+
+0      10 ( 71%)
+1       4 ( 29%)
+

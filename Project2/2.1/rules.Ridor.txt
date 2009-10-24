@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.Ridor -F 3 -S 1 -N 2.0
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RIpple DOwn Rule Learner(Ridor) rules
+--------------------------------------
+
+play = yes  (14.0/0.0)
+
+Total number of rules (incl. the default rule): 1
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           5               35.7143 %
+Incorrectly Classified Instances         9               64.2857 %
+Kappa statistic                         -0.4651
+Mean absolute error                      0.6429
+Root mean squared error                  0.8018
+Relative absolute error                135      %
+Root relative squared error            162.5137 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.556     1          0.5       0.556     0.526      0.278    yes
+                 0         0.444      0         0         0          0.278    no
+Weighted Avg.    0.357     0.802      0.321     0.357     0.338      0.278
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 5 4 | a = yes
+ 5 0 | b = no
+
