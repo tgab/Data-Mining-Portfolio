@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     weather
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -3.2488354416891236
+    Node 2    5.706344521860182
+    Node 3    2.443270263208691
+    Node 4    2.642557649901566
+    Node 5    2.510341405715611
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    3.247940047055842
+    Node 2    -5.704744057107486
+    Node 3    -2.3959635449403205
+    Node 4    -2.61941341516743
+    Node 5    -2.5789267455312403
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.4298110453038182
+    Attrib outlook=sunny    1.2796074137730873
+    Attrib outlook=overcast    2.5993304643376645
+    Attrib outlook=rainy    -2.482189408449901
+    Attrib temperature    -0.9917844366897345
+    Attrib humidity    -4.13257597252398
+    Attrib windy    -0.8030823939514038
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.77406723408045
+    Attrib outlook=sunny    -1.9100370742566124
+    Attrib outlook=overcast    2.3822068707682837
+    Attrib outlook=rainy    0.23499213125743795
+    Attrib temperature    -0.8639638424331724
+    Attrib humidity    -0.8117295111072005
+    Attrib windy    3.092359794678844
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.7812523749731834
+    Attrib outlook=sunny    -2.0149350612947305
+    Attrib outlook=overcast    2.4850160661055667
+    Attrib outlook=rainy    0.24297467799788966
+    Attrib temperature    -0.9010443938018438
+    Attrib humidity    -0.8326891162034936
+    Attrib windy    3.2551200398085225
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.757410268221943
+    Attrib outlook=sunny    -1.9605922799976896
+    Attrib outlook=overcast    2.4819301353736045
+    Attrib outlook=rainy    0.2838381715677161
+    Attrib temperature    -0.8613350411165103
+    Attrib humidity    -0.7756280503535902
+    Attrib windy    3.1699101529353477
+Class yes
+    Input
+    Node 0
+Class no
+    Input
+    Node 1
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          11               78.5714 %
+Incorrectly Classified Instances         3               21.4286 %
+Kappa statistic                          0.5116
+Mean absolute error                      0.265 
+Root mean squared error                  0.4627
+Relative absolute error                 55.6497 %
+Root relative squared error             93.7923 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     0.4        0.8       0.889     0.842      0.733    yes
+                 0.6       0.111      0.75      0.6       0.667      0.733    no
+Weighted Avg.    0.786     0.297      0.782     0.786     0.779      0.733
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 8 1 | a = yes
+ 2 3 | b = no
+

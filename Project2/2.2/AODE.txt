@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.AODE -F 1
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The AODE Classifier
+Class yes: Prior probability = 0.63
+
+
+Class no: Prior probability = 0.38
+
+Dataset: weather.symbolic
+Instances: 14
+Attributes: 5
+Frequency limit for superParents: 1
+Correction: laplace
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           7               50      %
+Incorrectly Classified Instances         7               50      %
+Kappa statistic                         -0.0426
+Mean absolute error                      0.4706
+Root mean squared error                  0.498 
+Relative absolute error                 98.8198 %
+Root relative squared error            100.941  %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.556     0.6        0.625     0.556     0.588      0.533    yes
+                 0.4       0.444      0.333     0.4       0.364      0.533    no
+Weighted Avg.    0.5       0.544      0.521     0.5       0.508      0.533
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 5 4 | a = yes
+ 3 2 | b = no
+

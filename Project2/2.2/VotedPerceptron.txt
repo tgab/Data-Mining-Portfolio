@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.VotedPerceptron -I 1 -E 1.0 -S 1 -M 10000
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+VotedPerceptron: Number of perceptrons=4
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           8               57.1429 %
+Incorrectly Classified Instances         6               42.8571 %
+Kappa statistic                         -0.1351
+Mean absolute error                      0.3918
+Root mean squared error                  0.5825
+Relative absolute error                 82.2829 %
+Root relative squared error            118.0664 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     1          0.615     0.889     0.727      0.622    yes
+                 0         0.111      0         0         0          0.622    no
+Weighted Avg.    0.571     0.683      0.396     0.571     0.468      0.622
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 8 1 | a = yes
+ 5 0 | b = no
+

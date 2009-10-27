@@ -1,0 +1,121 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.597967080790813
+    Node 2    2.433270074007239
+    Node 3    2.0546443732203774
+    Node 4    1.364159803860347
+    Node 5    2.6974766889493536
+    Node 6    3.908322709064356
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.601251960011152
+    Node 2    -2.4045226373071156
+    Node 3    -2.0532744956144127
+    Node 4    -1.379986429753948
+    Node 5    -2.756274547604192
+    Node 6    -3.877948258791871
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.1550798021501342
+    Attrib outlook=sunny    -1.323464477913686
+    Attrib outlook=overcast    1.6602675280399888
+    Attrib outlook=rainy    -0.3207802552865604
+    Attrib temperature=hot    -0.2873122456981835
+    Attrib temperature=mild    1.181190360097958
+    Attrib temperature=cool    -0.7853150475848826
+    Attrib humidity    2.808930687905
+    Attrib windy    1.9190213581350706
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.18031675012278034
+    Attrib outlook=sunny    -1.1524514010228344
+    Attrib outlook=overcast    1.5760227701429683
+    Attrib outlook=rainy    -0.32578400279223824
+    Attrib temperature=hot    -0.2760307631136823
+    Attrib temperature=mild    1.0450876279343007
+    Attrib temperature=cool    -0.6318819517738498
+    Attrib humidity    2.4504774603875408
+    Attrib windy    1.678251292646871
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.3554146745674961
+    Attrib outlook=sunny    -0.46574052680925143
+    Attrib outlook=overcast    1.4382073898080827
+    Attrib outlook=rainy    -0.6194183985830608
+    Attrib temperature=hot    -0.0670794406887232
+    Attrib temperature=mild    0.6337484752708613
+    Attrib temperature=cool    -0.20814280117719502
+    Attrib humidity    1.982466584793048
+    Attrib windy    0.9946423645131915
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.06888405078498452
+    Attrib outlook=sunny    -1.3982064219096493
+    Attrib outlook=overcast    1.8084944112736516
+    Attrib outlook=rainy    -0.31997269602762973
+    Attrib temperature=hot    -0.3035821635771427
+    Attrib temperature=mild    1.2908528760310662
+    Attrib temperature=cool    -0.8921466424329777
+    Attrib humidity    3.1090049574873424
+    Attrib windy    2.0747113212966872
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.04399369934901554
+    Attrib outlook=sunny    -1.80182134279014
+    Attrib outlook=overcast    2.2544547024444554
+    Attrib outlook=rainy    -0.40095717506501327
+    Attrib temperature=hot    -0.41558677311306397
+    Attrib temperature=mild    1.589170285947685
+    Attrib temperature=cool    -1.2545441906677217
+    Attrib humidity    4.119310666164331
+    Attrib windy    2.740851006387263
+Class yes
+    Input
+    Node 0
+Class no
+    Input
+    Node 1
+
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          10               71.4286 %
+Incorrectly Classified Instances         4               28.5714 %
+Kappa statistic                          0.3778
+Mean absolute error                      0.287 
+Root mean squared error                  0.5268
+Relative absolute error                 60.2616 %
+Root relative squared error            106.7798 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.778     0.4        0.778     0.778     0.778      0.778    yes
+                 0.6       0.222      0.6       0.6       0.6        0.778    no
+Weighted Avg.    0.714     0.337      0.714     0.714     0.714      0.778
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 7 2 | a = yes
+ 2 3 | b = no
+

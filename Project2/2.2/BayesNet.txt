@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=5 #classindex=4
+Network structure (nodes followed by parents)
+outlook(3): play 
+temperature(3): play 
+humidity(2): play 
+windy(2): play 
+play(2): 
+LogScore Bayes: -69.07317135664013
+LogScore BDeu: -83.46880542273107
+LogScore MDL: -82.71568504897063
+LogScore ENTROPY: -65.56181240647145
+LogScore AIC: -78.56181240647145
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           8               57.1429 %
+Incorrectly Classified Instances         6               42.8571 %
+Kappa statistic                         -0.0244
+Mean absolute error                      0.415 
+Root mean squared error                  0.4909
+Relative absolute error                 87.1501 %
+Root relative squared error             99.5104 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.778     0.8        0.636     0.778     0.7        0.622    yes
+                 0.2       0.222      0.333     0.2       0.25       0.622    no
+Weighted Avg.    0.571     0.594      0.528     0.571     0.539      0.622
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 7 2 | a = yes
+ 4 1 | b = no
+
