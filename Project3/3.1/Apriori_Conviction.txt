@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 3 -C 1.1 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.25 (3 instances)
+Minimum metric <conviction>: 1.1
+Number of cycles performed: 15
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 12
+
+Size of set of large itemsets L(2): 26
+
+Size of set of large itemsets L(3): 4
+
+Best rules found:
+
+ 1. temperature=cool 4 ==> humidity=normal 4    conf:(1) lift:(2) lev:(0.14) [2] < conv:(2)>
+ 2. outlook=sunny humidity=high 3 ==> play=no 3    conf:(1) lift:(2.8) lev:(0.14) [1] < conv:(1.93)>
+ 3. outlook=sunny play=no 3 ==> humidity=high 3    conf:(1) lift:(2) lev:(0.11) [1] < conv:(1.5)>
+ 4. temperature=cool play=yes 3 ==> humidity=normal 3    conf:(1) lift:(2) lev:(0.11) [1] < conv:(1.5)>
+ 5. outlook=overcast 4 ==> play=yes 4    conf:(1) lift:(1.56) lev:(0.1) [1] < conv:(1.43)>
+ 6. humidity=normal windy=FALSE 4 ==> play=yes 4    conf:(1) lift:(1.56) lev:(0.1) [1] < conv:(1.43)>
+ 7. play=no 5 ==> outlook=sunny humidity=high 3    conf:(0.6) lift:(2.8) lev:(0.14) [1] < conv:(1.31)>
+ 8. humidity=high play=no 4 ==> outlook=sunny 3    conf:(0.75) lift:(2.1) lev:(0.11) [1] < conv:(1.29)>
+ 9. outlook=rainy play=yes 3 ==> windy=FALSE 3    conf:(1) lift:(1.75) lev:(0.09) [1] < conv:(1.29)>
+10. humidity=normal 7 ==> play=yes 6    conf:(0.86) lift:(1.33) lev:(0.11) [1] < conv:(1.25)>
+

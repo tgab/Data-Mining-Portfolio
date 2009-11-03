@@ -1,0 +1,8 @@
+digraph G{
+	"temperature \n(73.5714)" -> "outlook = sunny \n(76.2 [5])";
+	"temperature \n(73.5714)" -> "humidity > 80 \n(76.1429 [7])";
+	"outlook = sunny \n(76.2 [5])" -> "humidity > 70 \n(79 [3])";
+	"outlook = sunny \n(76.2 [5])" -> "play = no \n(79 [3])";
+	"humidity > 80 \n(76.1429 [7])" -> "humidity <= 90 \n(80 [4])";
+	"humidity > 80 \n(76.1429 [7])" -> "outlook = sunny \n(79 [3])";
+}

@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.associations.Tertius -K 10 -F 0.0 -N 1.0 -L 4 -G 0 -c 0 -I 0 -P 0
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+=== Associator model (full training set) ===
+
+
+Tertius
+=======
+
+ 1. /* 0.633754 0.071429 */ play = yes ==> humidity = normal or outlook = overcast
+ 2. /* 0.607625 0.000000 */ humidity = normal ==> temperature = cool or play = yes
+ 3. /* 0.607625 0.000000 */ temperature = cool ==> humidity = normal
+ 4. /* 0.594071 0.214286 */ humidity = normal ==> temperature = cool
+ 5. /* 0.590214 0.000000 */ humidity = high and outlook = sunny ==> play = no
+ 6. /* 0.555556 0.000000 */ play = no ==> windy = TRUE or outlook = sunny
+ 7. /* 0.486606 0.000000 */ play = no and outlook = sunny ==> humidity = high
+ 8. /* 0.486606 0.000000 */ humidity = normal ==> play = yes or outlook = rainy
+ 9. /* 0.469374 0.000000 */ outlook = overcast ==> play = yes
+10. /* 0.469374 0.000000 */ windy = FALSE and outlook = overcast ==> temperature = hot
+11. /* 0.469374 0.000000 */ outlook = overcast ==> temperature = hot or windy = TRUE
+12. /* 0.469374 0.000000 */ temperature = hot and play = yes ==> outlook = overcast
+13. /* 0.469374 0.000000 */ play = no ==> humidity = high or windy = TRUE
+14. /* 0.469374 0.000000 */ temperature = hot ==> play = no or outlook = overcast
+15. /* 0.469374 0.000000 */ temperature = hot ==> humidity = high or outlook = overcast
+16. /* 0.469374 0.000000 */ humidity = high and play = no ==> temperature = mild or outlook = sunny
+17. /* 0.469374 0.000000 */ temperature = mild and play = yes ==> windy = TRUE or outlook = rainy
+18. /* 0.469374 0.000000 */ outlook = sunny ==> temperature = cool or windy = TRUE or play = no
+19. /* 0.467119 0.357143 */ play = yes ==> outlook = overcast
+20. /* 0.458333 0.071429 */ play = yes ==> windy = FALSE or outlook = overcast
+21. /* 0.458333 0.071429 */ humidity = high and play = no ==> outlook = sunny
+22. /* 0.439100 0.071429 */ play = no ==> humidity = high
+23. /* 0.439100 0.071429 */ humidity = high ==> temperature = mild or play = no
+24. /* 0.439100 0.071429 */ humidity = high ==> temperature = mild or outlook = sunny
+
+Number of hypotheses considered: 1724
+Number of hypotheses explored: 689

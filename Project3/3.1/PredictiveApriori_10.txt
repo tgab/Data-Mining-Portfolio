@@ -1,0 +1,31 @@
+=== Run information ===
+
+Scheme:       weka.associations.PredictiveApriori -N 10 -c -1
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+=== Associator model (full training set) ===
+
+
+PredictiveApriori
+===================
+
+
+Best rules found:
+
+ 1. outlook=overcast 4 ==> play=yes 4    acc:(0.95323)
+ 2. temperature=cool 4 ==> humidity=normal 4    acc:(0.95323)
+ 3. humidity=normal windy=FALSE 4 ==> play=yes 4    acc:(0.95323)
+ 4. humidity=normal 7 ==> play=yes 6    acc:(0.69497)
+ 5. play=no 5 ==> humidity=high 4    acc:(0.59096)
+ 6. windy=FALSE 8 ==> play=yes 6    acc:(0.56435)
+ 7. temperature=hot 4 ==> humidity=high 3    acc:(0.54473)
+ 8. temperature=hot 4 ==> windy=FALSE 3    acc:(0.54473)
+ 9. temperature=cool 4 ==> play=yes 3    acc:(0.54473)
+10. humidity=normal play=yes 6 ==> windy=FALSE 4    acc:(0.51949)
+

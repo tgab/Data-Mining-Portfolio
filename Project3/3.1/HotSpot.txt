@@ -1,0 +1,27 @@
+=== Run information ===
+
+Scheme:       weka.associations.HotSpot -c 2 -V first -S 0.33 -M 2 -I 0.01
+Relation:     weather
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+=== Associator model (full training set) ===
+
+
+Hot Spot
+========
+Total population: 14 instances
+Target attribute: temperature
+Minimum segment size: 5 instances (33% of total population)
+Maximum branching factor: 2
+Minimum improvement in target: 1%
+
+temperature (73.5714)
+  outlook = sunny (76.2 [5])
+  humidity > 80 (76.1429 [7])
+  |   humidity <= 91 (78.2 [5])
+
