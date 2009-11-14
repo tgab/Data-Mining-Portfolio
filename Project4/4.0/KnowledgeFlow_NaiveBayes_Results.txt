@@ -1,0 +1,19 @@
+=== Performance information ===
+
+Scheme:   NaiveBayesUpdateable
+Relation: iris
+
+
+Correctly Classified Instances         144               96      %
+Incorrectly Classified Instances         6                4      %
+Kappa statistic                          0.94  
+Mean absolute error                      0.0339
+Root mean squared error                  0.1463
+Total Number of Instances              150     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 48  2 |  b = Iris-versicolor
+  0  4 46 |  c = Iris-virginica
